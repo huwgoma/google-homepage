@@ -2,9 +2,20 @@
     display:block;
     margin:auto;
 }
+
+#google-search-bar-wrapper {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#google-search-icon {
+    position:relative;
+    left:35px;
+    color: hsl(0, 0%, 50%);
+}
 #google-search-bar{
-    display:block;
-    margin:auto;
+    /*display:block;
+    margin:auto;*/
     width:30vw;
     height:2vw;
     border:1px solid hsl(0, 0%, 70%);

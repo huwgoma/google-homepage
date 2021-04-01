@@ -35,10 +35,11 @@
         <main id='google-main'>
             <img id='google-logo' src='https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png'>
             <form id='google-search-form'>
-                <label for='google-search-bar' action='form-submit-destination'>
-                    <span class='material-icons'>&#xe8b6;</span>
+                <label id='google-search-bar-wrapper' for='google-search-bar' action='form-submit-destination'> <!--Flex container for Google Search Bar; Previous iteration with parent div didn't work because the search icon and bar weren't direct children-->
+                    <span id='google-search-icon' class='material-icons'>&#xe8b6;</span>
                     <input id='google-search-bar' type='text' placeholder="Enter Text Here...">
                 </label>
+             
                 <div id='google-search-button-wrapper'>
                     <button id='google-search-button' class='google-search-button' type='submit'>Google Search</button>
                     <button id='google-search-lucky-button' class='google-search-button' type='submit'>I'm Feeling Lucky</button>
