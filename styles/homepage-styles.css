@@ -14,8 +14,6 @@
     color: hsl(0, 0%, 50%);
 }
 #google-search-bar{
-    /*display:block;
-    margin:auto;*/
     width:30vw;
     height:2vw;
     border:1px solid hsl(0, 0%, 70%);
