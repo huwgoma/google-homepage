@@ -14,3 +14,8 @@
 #google-search-bar:hover{
     box-shadow: 3px 3px 2px 2px hsl(0, 0%, 90%);
 }
+#google-search-button-wrapper {
+    display:flex;
+    justify-content:center;
+    padding:10px;
+}

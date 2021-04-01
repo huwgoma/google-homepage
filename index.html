@@ -5,6 +5,7 @@
         <title>Google</title>
         <link rel='icon' href='https://img-authors.flaticon.com/google.jpg'>
         <link href='styles/homepage-styles.css' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel='stylesheet'>
     </head>
     <body>
         <header id='google-header'>
@@ -35,10 +36,13 @@
             <img id='google-logo' src='https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png'>
             <form id='google-search-form'>
                 <label for='google-search-bar' action='form-submit-destination'>
+                    <span class='material-icons'>&#xe8b6;</span>
                     <input id='google-search-bar' type='text' placeholder="Enter Text Here...">
                 </label>
-                <button id='google-search-button' class='google-search-button' type='submit'>Google Search</button>
-                <button id='google-search-lucky-button' class='google-search-button' type='submit'>I'm Feeling Lucky</button>
+                <div id='google-search-button-wrapper'>
+                    <button id='google-search-button' class='google-search-button' type='submit'>Google Search</button>
+                    <button id='google-search-lucky-button' class='google-search-button' type='submit'>I'm Feeling Lucky</button>
+                </div>
             </form>
             <p id='google-alt-languages'>Google is offered in these alternative languages: <a href="#" id='google-chinese'>日本語</a> <a href="#" id='google-french'>Français</a></p>
         </main>
