@@ -7,6 +7,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    padding:20px;
 }
 #google-search-icon {
     position:relative;
@@ -14,8 +15,8 @@
     color: hsl(0, 0%, 50%);
 }
 #google-search-bar{
-    width:30em;
-    height:2em;
+    width:46em; /*em is relative to the parent element's font-size, which should stay constant even as the container size shrinks */
+    height:3em; /*whereas % and vw are relative to the parent element's SIZE or the size of the viewport, which are both values that will change as the container size changes */
     border:1px solid hsl(0, 0%, 70%);
     border-radius:20px;
     padding-left:40px;
@@ -26,5 +27,6 @@
 #google-search-button-wrapper {
     display:flex;
     justify-content:center;
+    align-items: center;
     padding:10px;
 }
