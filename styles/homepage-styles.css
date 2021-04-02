@@ -1,6 +1,35 @@
 html{
     font-family: Arial, Helvetica, sans-serif
 }
+/*header*/
+#google-header-list {
+    list-style-type: none;
+    margin:0;
+    padding:0; /* default for <ul> is padding-left:40px; margin: 1em 0 1em 0;*/
+    font-size: 14px;
+    display:flex;
+    justify-content: space-between; /*put one half (header left/right) on each side, space between*/
+
+}
+.google-header-list-left {
+    display:flex;
+}
+.google-header-list-right {
+    display:flex;
+    
+}
+.google-header-list-item {
+  
+}
+#google-header-user-icon{
+    border-radius:50%;
+    width:75%;
+    height:auto;
+}
+/*main*/
+#google-main {
+    clear:both; /*clear floats of the header nav bar*/
+}
 #google-logo {
     display:block;
     margin:auto;
@@ -57,3 +86,4 @@ html{
 #google-alt-languages a:hover{
     text-decoration: underline;
 }
+/*footer*/
