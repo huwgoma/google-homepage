@@ -4,24 +4,35 @@ html{
 /*header*/
 #google-header-list {
     list-style-type: none;
-    margin:0;
+    margin:11px 0 0 0;
     padding:0; /* default for <ul> is padding-left:40px; margin: 1em 0 1em 0;*/
     font-size: 14px;
     height:auto; /*set a height on the flex container to ensure align-items/align-self works*/
     display:flex;
     justify-content: space-between; /*put one half (header left/right) on each side, space between*/
+    
 }
 .google-header-list-left {
     display:flex;
     align-items:center; /*Align-items: Set on the flex container; Align-SELF: Set on the flex item*/
+    margin-left:8px;
 }
 .google-header-list-right {
     display:flex;
     align-items:center;
+    font-size: 12px;
+}
+.google-header-list-right li:last-child { /*select the last <li> element in google-header-list-right*/
+    padding-right:0;
 }
 .google-header-list-item {
-    padding: 0 10px 0 20px;
+    padding: 0 10px 0 10px;
 }
+
+/*select image with id of google header user icon*/
+/*img[id='google-header-user-icon']{ 
+    border:2px solid black;
+}*/
 #google-header-user-icon{
     border-radius:50%;
     width:75%;
@@ -43,7 +54,7 @@ html{
 /*main*/
 #google-main {
     /*clear:both;*/ /*clear floats of the header nav bar*/
-    margin-top:10vw;
+    margin-top:11vw;
 }
 #google-logo {
     display:block;
@@ -100,5 +111,8 @@ html{
 }
 #google-alt-languages a:hover{
     text-decoration: underline;
+}
+#google-alt-languages a:visited {
+    color:blue;
 }
 /*footer*/
