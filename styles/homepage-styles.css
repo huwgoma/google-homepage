@@ -1,8 +1,10 @@
+html{
+    font-family: Arial, Helvetica, sans-serif
+}
 #google-logo {
     display:block;
     margin:auto;
 }
-
 #google-search-bar-wrapper {
     display:flex;
     justify-content: center;
@@ -28,5 +30,30 @@
     display:flex;
     justify-content:center;
     align-items: center;
-    padding:10px;
+    padding:10px 0 15px 0;
+}
+.google-search-button {
+    height:2.5em;
+    border:none;
+    font-size: 14px;
+    background-color:hsl(0, 0%, 97%);
+    margin: 0 5px;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+.google-search-button:hover {
+    cursor:pointer;
+    box-shadow: 1px 1px 2px 1px hsl(0, 0%, 80%);
+}
+#google-alt-languages {
+    font-size: 13px;
+    display:flex;
+    justify-content: center;
+}
+#google-alt-languages a {
+    text-decoration: none;
+    padding: 0 3px;
+}
+#google-alt-languages a:hover{
+    text-decoration: underline;
 }
