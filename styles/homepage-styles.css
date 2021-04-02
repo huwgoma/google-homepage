@@ -13,23 +13,37 @@ html{
 }
 .google-header-list-left {
     display:flex;
-    align-items:center;
+    align-items:center; /*Align-items: Set on the flex container; Align-SELF: Set on the flex item*/
 }
 .google-header-list-right {
     display:flex;
     align-items:center;
 }
 .google-header-list-item {
-
+    padding: 0 10px 0 20px;
 }
 #google-header-user-icon{
     border-radius:50%;
     width:75%;
     height:auto;
 }
+#google-header a {
+    text-decoration: none;
+}
+#google-header a:hover{
+    text-decoration: underline;
+}
+#google-header a:visited {
+    color: inherit; /*prevent links from changing color once visited; simply inherit the same color the parent is using */
+}
+
+   
+
+
 /*main*/
 #google-main {
-    clear:both; /*clear floats of the header nav bar*/
+    /*clear:both;*/ /*clear floats of the header nav bar*/
+    margin-top:10vw;
 }
 #google-logo {
     display:block;
