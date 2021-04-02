@@ -1,6 +1,9 @@
 html{
     font-family: Arial, Helvetica, sans-serif
 }
+/*body{
+    height:100vh;
+}*/
 /*header*/
 #google-header-list {
     list-style-type: none;
@@ -115,4 +118,39 @@ html{
 #google-alt-languages a:visited {
     color:blue;
 }
+
 /*footer*/
+#google-footer {
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    
+}
+#google-footer-list {
+    list-style-type: none;
+    padding:0;
+    margin:0;
+    display:grid;
+    grid-template-columns: auto auto auto 1fr auto auto auto;
+    grid-template rows: 1fr;
+    grid-template-areas:
+        "advertising business how . privacy terms settings"
+}
+#google-footer-list>li:nth-of-type(1) { /*select the first <li> element whose parent is google-footer-list*/
+    grid-area:advertising;
+}
+#google-footer-list>li:nth-of-type(2){
+    grid-area: business;
+}
+#google-footer-list>li:nth-of-type(3){
+    grid-area: how;
+}
+#google-footer-list>li:nth-of-type(4) {
+    grid-area:privacy;
+}
+#google-footer-list>li:nth-of-type(5) {
+    grid-area:terms;
+}
+#google-footer-list>li:nth-of-type(6) {
+    grid-area:settings;
+}
