@@ -163,6 +163,7 @@ body{
 }
 #google-footer-list a {
     text-decoration:none;
+    color:hsl(0, 0%, 50%);
 }
 #google-footer-list a:visited {
     color: hsl(0, 0%, 50%);
