@@ -128,23 +128,47 @@ body{
     color:blue;
 }
 
+
+
 /*footer*/
 #google-footer {
     display:flex;
     flex-direction:column;
-    width:100%;
+    width:100%; /*keep the footer spanning the width of the parent container(body)*/
     position: absolute;
-    bottom:0;
+    bottom:0; /*these two properties will push the footer down to the bottom of the page*/
+    font-size:15px;
+    color: hsl(0, 0%, 50%);
+}
+
+#google-footer-country {
+    background-color: hsl(0, 0%, 95%);
+    border-bottom: 1px solid lightgrey;
+    padding: 15px 15px 15px 30px;
+    
+    
 }
 #google-footer-list {
     list-style-type: none;
     padding:0;
     margin:0;
+    background-color: hsl(0, 0%, 95%);
+    padding:15px 15px 15px 30px;
+
     display:grid;
     grid-template-columns: auto auto auto 1fr auto auto auto;
-    grid-template-rows: 1fr;
+    column-gap: 20px;
     grid-template-areas:
         "advertising business how . privacy terms settings"
+}
+#google-footer-list a {
+    text-decoration:none;
+}
+#google-footer-list a:visited {
+    color: hsl(0, 0%, 50%);
+}
+#google-footer-list a:hover {
+    text-decoration: underline;
 }
 #google-footer-list>li:nth-of-type(1) { /*select the first <li> element whose parent is google-footer-list*/
     grid-area:advertising;
@@ -163,4 +187,7 @@ body{
 }
 #google-footer-list>li:nth-of-type(6) {
     grid-area:settings;
+    padding-right: 30px;
 }
+
+
